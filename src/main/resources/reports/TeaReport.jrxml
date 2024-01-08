@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TeaReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d388c91b-7f3a-4ef6-ab3e-abbbc37bf4d6">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="TeaReport"/>
+	<queryString language="SQL">
+		<![CDATA[select * from tea]]>
+	</queryString>
+	<field name="T_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="T_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="T_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tea"/>
+	</field>
+	<field name="Weight" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="Weight"/>
+		<property name="com.jaspersoft.studio.field.label" value="Weight"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tea"/>
+	</field>
+	<field name="Type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Type"/>
+		<property name="com.jaspersoft.studio.field.label" value="Type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tea"/>
+	</field>
+	<field name="Monthly_pay_kilo" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="Monthly_pay_kilo"/>
+		<property name="com.jaspersoft.studio.field.label" value="Monthly_pay_kilo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tea"/>
+	</field>
+	<field name="Description" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Description"/>
+		<property name="com.jaspersoft.studio.field.label" value="Description"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tea"/>
+	</field>
+	<group name="T_id">
+		<groupExpression><![CDATA[$F{T_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="119" splitType="Stretch">
+			<image>
+				<reportElement x="-11" y="0" width="200" height="107" uuid="8546d414-3983-4b3f-8fa4-dcbc09a25ed1"/>
+				<imageExpression><![CDATA["C:/IJSE REPOSITORY/Final-Project-java/final_project/TeaCollection/src/main/resources/assets/Screenshot_from_2023-11-05_10-41-44-removebg.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="230" y="38" width="110" height="30" uuid="46fe16ec-929c-4e34-bb39-9d7299bed7eb"/>
+				<textElement>
+					<font fontName="Arial Black" size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Tea Report ]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="450" y="8" width="100" height="20" uuid="9618d87b-745f-4a56-b28c-06c5c37dff71"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="450" y="48" width="100" height="20" uuid="638aaca4-b5af-4c44-b6cd-2c396ed55081"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="410" y="8" width="40" height="20" uuid="81c95d47-e309-4a90-9a9a-bd01f1d9763d"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[DATE : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="48" width="40" height="20" uuid="ba15bc15-7974-42f3-94be-6509ec6f56c3"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[TIME : ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="110" width="595" height="1" uuid="03f49598-f763-44c6-b05a-54f0f8ad120d"/>
+			</line>
+			<staticText>
+				<reportElement x="315" y="88" width="82" height="18" uuid="648bdd00-ad8a-41cc-8d54-fdaacff0cc13"/>
+				<textElement>
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Tp : 0740996354]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="87" width="166" height="20" uuid="90fb677e-a7ed-4078-928b-39056a46cccb"/>
+				<textElement>
+					<font isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[E-Mail : groverschoice9@gmail.com
+]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="30" uuid="9f747b32-1226-49b0-b9bb-bbcdd560adea">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="abef2b80-e7ee-4ef6-a1bf-cc972eb740ff"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[T_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="0" width="100" height="30" uuid="d4de3d75-3414-4f99-9fa5-c5148a98c02c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="702a9353-1bf9-4266-9ba3-5b8d7e708d00"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Weight]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="60" height="30" uuid="8fcd5b23-c0c8-4986-8ca5-fa7a1bcf06e2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="82c32614-9dc7-4950-8524-59788453b4e0"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="0" width="160" height="30" uuid="65e23735-7921-4a22-a441-7d907cd95a71">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="64232798-a271-462c-8e93-856218d66f9b"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Tea Rate In Month]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="0" width="110" height="30" uuid="6f30e05b-ee95-4051-831a-574e800c1c2e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f53e73ab-0743-44a4-b907-5a26d846e1c8"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="50" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="4" width="80" height="30" uuid="27bedbd4-385b-4fcb-a256-09648e058ed8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="abef2b80-e7ee-4ef6-a1bf-cc972eb740ff"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{T_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="4" width="100" height="30" uuid="2da3c1e0-1da4-48c7-be7f-cbbd7330bdea">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="702a9353-1bf9-4266-9ba3-5b8d7e708d00"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Weight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="4" width="100" height="30" uuid="3a2e9723-cc28-45b6-9fb7-b1e4228e54dd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="82c32614-9dc7-4950-8524-59788453b4e0"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="4" width="100" height="30" uuid="8e93a03e-ac56-4f00-bb7d-7cd1e037fe7a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="64232798-a271-462c-8e93-856218d66f9b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Monthly_pay_kilo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="100" height="30" uuid="4d65c640-1389-41b8-80df-9375a8834e6a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f53e73ab-0743-44a4-b907-5a26d846e1c8"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Description}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,231 @@
+/* styles.css */
+
+#btnBack {
+    -fx-background-color: transparent;
+    -fx-text-fill: Black;
+    -fx-font-size: 14px;
+    -fx-border-radius: 20;
+}
+
+#btnBack:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: black;
+}
+/*---------------------------------------*/
+#btnReset{
+    -fx-background-color: Black;
+    -fx-text-fill: White;
+    -fx-font-size: 12px;
+    -fx-border-radius: 20;
+}
+#btnReset:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: black;
+}
+/*---------------------------------------*/
+#txtUsername {
+    -fx-border-radius: 15;
+}
+
+#txtUsername:hover {
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+/*----------------------------------------*/
+#btnBack {
+    -fx-background-color: transparent;
+    -fx-text-fill: Black;
+    -fx-font-size: 14px;
+    -fx-border-radius: 20;
+}
+
+#btnBack:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: black;
+}
+/*---------------------------------------*/
+#txtOtp {
+    -fx-border-radius: 15;
+}
+
+#txtOtp:hover {
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+/*---------------------------------------*/
+#btnVerify{
+    -fx-background-color: Black;
+    -fx-text-fill: White;
+    -fx-font-size: 12px;
+    -fx-border-radius: 20;
+}
+#btnVerify:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: black;
+}
+/*---------------------------------------*/
+#btnLogin{
+    -fx-background-color: Black;
+    -fx-text-fill: White;
+    -fx-font-size: 12px;
+    -fx-border-radius: 20;
+}
+#btnLogin:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: black;
+}
+/*---------------------------------------*/
+#txtPassword {
+    -fx-border-radius: 15;
+}
+
+#txtPassword:hover {
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+/*---------------------------------------*/
+#txtConfirmPassword {
+    -fx-border-radius: 15;
+}
+
+#txtConfirmPassword:hover {
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+/*---------------------------------------*/
+#usernametxt {
+    -fx-border-radius: 15;
+}
+
+#usernametxt:hover {
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+/*---------------------------------------*/
+#txtPassword {
+    -fx-border-radius: 15;
+}
+
+#txtPassword:hover {
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+/*---------------------------------------*/
+#txtPasswordConfirmation {
+    -fx-border-radius: 15;
+}
+
+#txtPasswordConfirmation:hover {
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+/*---------------------------------------*/
+#txtEmail {
+    -fx-border-radius: 15;
+}
+
+#txtEmail:hover {
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+/*---------------------------------------*/
+#lblOutTime {
+    -fx-border-radius: 15;
+}
+
+#lblOutTime:hover {
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+/*---------------------------------------*/
+#btnSetOnAction{
+    -fx-background-color: Black;
+    -fx-text-fill: White;
+    -fx-font-size: 12px;
+    -fx-border-radius: 20;
+}
+#btnSetOnAction:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: black;
+
+}
+/*---------------------------------------*/
+#btnTeaReport{
+    -fx-background-color: Black;
+    -fx-text-fill: White;
+    -fx-font-size: 12px;
+    -fx-border-radius: 20;
+}
+#btnTeaReport:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: black;
+    -fx-font-family: "Arial Black";
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+/*---------------------------------------*/
+#btnSalaryReport{
+    -fx-background-color: Black;
+    -fx-text-fill: White;
+    -fx-font-size: 12px;
+    -fx-border-radius: 20;
+}
+#btnSalaryReport:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: black;
+    -fx-font-family: "Arial Black";
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+
+/*---------------------------------------*/
+#btnPaymentReport{
+    -fx-background-color: Black;
+    -fx-text-fill: White;
+    -fx-font-size: 12px;
+    -fx-border-radius: 20;
+}
+#btnPaymentReport:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: black;
+    -fx-font-family: "Arial Black";
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+/*---------------------------------------*/
+#btnAddTeaOnAction{
+    -fx-background-color: Black;
+    -fx-text-fill: White;
+    -fx-font-size: 12px;
+    -fx-border-radius: 20;
+}
+#btnAddTeaOnAction:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: black;
+    -fx-font-family: "Arial Black";
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+/*---------------------------------------*/
+#btnAddFertilizer{
+    -fx-background-color: Black;
+    -fx-text-fill: White;
+    -fx-font-size: 12px;
+    -fx-border-radius: 20;
+}
+#btnAddFertilizer:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: black;
+    -fx-font-family: "Arial Black";
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+
+/*---------------------------------------*/
+#btnPaymentOnAction{
+    -fx-background-color: Black;
+    -fx-text-fill: White;
+    -fx-font-size: 12px;
+    -fx-border-radius: 20;
+}
+#btnPaymentOnAction:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: black;
+    -fx-font-family: "Arial Black";
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}

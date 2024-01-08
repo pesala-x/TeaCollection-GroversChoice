@@ -21,9 +21,9 @@ CREATE TABLE log_history (
 
 CREATE TABLE employee (
     Emp_id VARCHAR(10) PRIMARY KEY,
-    User_name VARCHAR(10) NOT NULL,
-    First_name VARCHAR(10) NOT NULL,
-    Last_name VARCHAR(10) NOT NULL,
+    User_name VARCHAR(20) NOT NULL,
+    First_name VARCHAR(20) NOT NULL,
+    Last_name VARCHAR(20) NOT NULL,
     Job_role VARCHAR(10) NOT NULL,
     Contact_no VARCHAR(11) NOT NULL,
     Address VARCHAR(50) NOT NULL,
@@ -41,16 +41,12 @@ CREATE TABLE salary (
     ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE attendance (
-    Att_id VARCHAR(10) PRIMARY KEY,
-    Emp_id VARCHAR(10) NOT NULL,
-    Sal_id VARCHAR(10) NOT NULL,
-    Time_in TIME NOT NULL,
-    Time_out TIME NOT NULL,
-    Work_hours DOUBLE NOT NULL,
+create table attendance (
+    Att_id varchar (4) primary key,
+    Emp_id varchar (4),
+    Time_in varchar (10),
+    work_hours varchar (4),
     CONSTRAINT FOREIGN KEY (Emp_id) REFERENCES employee (Emp_id)
-    ON DELETE CASCADE ON UPDATE CASCADE,
-    CONSTRAINT FOREIGN KEY (Sal_id) REFERENCES salary (Sal_id)
     ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -59,6 +55,8 @@ CREATE TABLE tea_producer (
     User_name VARCHAR(10) NOT NULL,
     Name VARCHAR(20) NOT NULL,
     Address VARCHAR(50) NOT NULL,
+    NIC VARCHAR(13) NOT NULL,
+    Contact_no VARCHAR(11) NOT NULL,
     Join_date DATE NOT NULL,
     CONSTRAINT FOREIGN KEY (User_name) REFERENCES users (User_name)
     ON DELETE CASCADE ON UPDATE CASCADE
@@ -102,8 +100,13 @@ CREATE TABLE tea (
     Weight DOUBLE NOT NULL,
     Type VARCHAR(10) NOT NULL,
     Monthly_pay_kilo DOUBLE NOT NULL,
-    Description VARCHAR(50) NOT NULL
+    Description VARCHAR(50) NOT NULL,
+    Pay_id VARCHAR(30) NOT NULL
 );
+
+alter table tea
+    add constraint Pay_id
+        foreign key (Pay_id) references payment (Pay_id);
 
 CREATE TABLE tea_detail (
     T_id VARCHAR(10) NOT NULL,
